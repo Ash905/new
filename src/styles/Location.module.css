@@ -1,0 +1,100 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 3rem 1.5rem;
+  background: url('/images/help-bg.webp') no-repeat center center;
+  background-size: cover;
+  position: relative;
+  font-family: 'Inter', sans-serif;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: 0;
+}
+
+.main {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  padding-bottom: 3rem;
+  animation: fadeIn 1s ease;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(90deg, #ff7a59, #ffbc7a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+  color: #f0f0f0;
+}
+
+/* Map Card */
+.mapCard {
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+  margin-bottom: 2rem;
+}
+
+/* Address Card */
+.addressCard {
+  background: rgba(255,255,255,0.95);
+  color: #111;
+  padding: 2rem 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  text-align: left;
+}
+
+.addressCard h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.addressCard p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.addressCard a {
+  color: #ff7a59;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.addressCard a:hover {
+  text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .title { font-size: 2.2rem; }
+  .subtitle { font-size: 1rem; }
+  .addressCard h2 { font-size: 1.4rem; }
+}
