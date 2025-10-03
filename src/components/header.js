@@ -159,7 +159,7 @@ export const Header = () => {
     const navItems = [
       // Your navItems array remains the same
         {
-          name: "Home", href: "/",
+          name: "H", href: "/",
           megaMenu: null
 
         },
