@@ -3,7 +3,7 @@ import { useCart } from '@/context/CartContext'; // Import the custom hook
 
 export default function CartPage() {
   // Use the global state and functions from the CartContext
-  const { cartItems, updateQuantity, removeFromCart, getTotal } = useCart();
+  const { cartItems, updateQuantity, removeFromCart, getTotal } = useCart() || { cartItems: [] };
 
   return (
     <div className="min-h-screen bg-gray-100 p-6">
